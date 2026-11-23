@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BIG CITY, cộng đồng GTA V Roleplay Việt Nam.">
+  <title>BIG CITY — Vietnam Roleplay</title>
+  <link rel="icon" href="assets/big-city.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="entry-screen" id="entry-screen" hidden>
+    <div class="entry-mark"><img src="assets/big-city.png" alt=""><span>BIG CITY / VIETNAM ROLEPLAY</span></div>
+    <button id="enter-site" class="entry-button" type="button">TRUY CẬP <span aria-hidden="true">↗</span></button>
+    <span class="entry-caption">BIG CITY // CỔNG THÀNH PHỐ</span>
+  </div>
+  <div id="site">
+  <header>
+    <a class="logo" href="#top"><img src="assets/big-city.png" alt=""><span>BIG CITY<small>VIETNAM ROLEPLAY</small></span></a>
+    <nav id="nav" aria-label="Điều hướng chính">
+      <a href="#world">KHÁM PHÁ</a>
+      <a href="#news">BẢN TIN</a>
+      <a href="#start">HƯỚNG DẪN</a>
+      <a href="#community">CỘNG ĐỒNG</a>
+    </nav>
+    <button class="outline" id="resident">CỔNG CƯ DÂN ↗</button>
+    <button class="outline" id="menu" aria-controls="nav" aria-label="Mở menu" aria-expanded="false">☰</button>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">BIG CITY / GTA V ROLEPLAY VIỆT NAM</div>
+        <h1 tabindex="-1">THÀNH PHỐ<span>KHÔNG NGỦ.</span></h1>
+        <p>Phía sau ánh đèn là một cuộc đời khác.<br>Chọn con đường của bạn. Viết câu chuyện của riêng mình.</p>
+        <div class="actions">
+          <a href="#start" class="btn">VÀO THÀNH PHỐ <span aria-hidden="true">↗</span></a>
+          <button class="outline" id="wallet-start" type="button">NẠP TIỀN ↗</button>
+          <button class="video" id="trailer"><span class="play" aria-hidden="true">▶</span>KHÁM PHÁ THẾ GIỚI</button>
+        </div>
+        <div class="hero-bottom"><span class="live" id="server-status">SẮP RA MẮT</span><a href="#world">CUỘN ĐỂ KHÁM PHÁ ↓</a></div>
+      </div>
+      <aside class="city-panel" aria-label="Thông tin thành phố">
+        <div class="city-panel-head">
+          <strong>CITY NETWORK</strong>
+          <div class="city-panel-switch" aria-label="Nội dung bảng thành phố">
+            <button type="button" id="members-toggle" aria-pressed="true" aria-controls="city-members">THÀNH VIÊN</button>
+            <button type="button" id="about-toggle" aria-pressed="false" aria-controls="city-about">GIỚI THIỆU</button>
+          </div>
+        </div>
+        <ul id="city-members"><li>Đang tải danh sách thành viên…</li></ul>
+        <p id="city-about" hidden>BIG CITY là cộng đồng GTA V Roleplay Việt Nam. Tạo nhân vật và bắt đầu câu chuyện của bạn tại thành phố.</p>
+        <div class="city-socials">
+          <button class="outline" id="discord-hero">DISCORD ↗</button>
+          <button class="outline" id="tiktok">TIKTOK ↗</button>
+          <button class="outline" id="youtube">YOUTUBE ↗</button>
+        </div>
+      </aside>
+    </div>
+    <div class="ticker" aria-hidden="true"><span>WELCOME TO BIG CITY</span>✳<span>KHÔNG GIỚI HẠN CÂU CHUYỆN</span>✳<span>MAKE YOUR OWN RULES</span>✳<span>THÀNH PHỐ KHÔNG NGỦ</span>✳</div>
+    <section id="world" class="world">
+      <div class="world-image" role="img" aria-label="Thành phố rực sáng trong đêm"><span class="image-tag">BIG CITY // AFTER DARK</span></div>
+      <div>
+        <div class="label">01 / MỘT CUỘC ĐỜI KHÁC</div>
+        <h2>BẠN SẼ LÀ <em>AI?</em></h2>
+        <p>Một tay đua đường phố. Một người gìn giữ trật tự. Hay người xây dựng đế chế từ hai bàn tay trắng? Bước vào thành phố, gặp những con người mới và để mỗi lựa chọn mở ra một câu chuyện.</p>
+        <div class="features">
+          <div><strong>ĐƯỜNG PHỐ GỌI TÊN</strong><small>Văn hóa xe và những cuộc gặp sau nửa đêm</small></div>
+          <div><strong>SỐNG MỘT VAI DIỄN</strong><small>Kết nối, hợp tác và tạo nên danh tiếng</small></div>
+          <div><strong>TỰ CHỌN LỐI ĐI</strong><small>Từ công việc đầu tiên đến tham vọng lớn</small></div>
+          <div><strong>CHẤT RIÊNG VIỆT NAM</strong><small>Không gian dành cho cộng đồng roleplay Việt</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="section-head"><div class="label">02 / CITY TRANSMISSION</div><h2>NHỊP ĐẬP <em>THÀNH PHỐ.</em></h2></div>
+      <div class="cards" id="news-list" aria-live="polite"><p>Đang tải bản tin…</p></div>
+    </section>
+    <section id="start">
+      <div class="label">03 / BẮT ĐẦU HÀNH TRÌNH</div>
+      <h2>SẴN SÀNG <em>ĐỔI VAI?</em></h2>
+      <div class="steps">
+        <article class="step"><b>01 /</b><h3>CHUẨN BỊ GTA V</h3><p>Chuẩn bị bản GTA V hợp lệ trên PC. Yêu cầu cấu hình sẽ được công bố khi máy chủ ra mắt.</p></article>
+        <article class="step"><b>02 /</b><h3>CÀI ĐẶT LAUNCHER</h3><p>Tải launcher của BIG CITY và làm theo hướng dẫn cài đặt khi có bản phát hành.</p><button class="outline" id="launcher">TẢI LAUNCHER ↗</button></article>
+        <article class="step"><b>03 /</b><h3>GỬI HỒ SƠ NHẬP VAI</h3><p>Đọc luật, chuẩn bị câu chuyện nhân vật rồi gửi hồ sơ để ban quản trị duyệt.</p><button class="outline" id="rules">LUẬT NHẬP VAI</button> <button class="outline" id="resident-start">CỔNG CƯ DÂN ↗</button></article>
+      </div>
+      <div class="join" id="community">
+        <div><h3>GẶP GỠ CỘNG ĐỒNG BIG CITY</h3><p>Theo dõi thông báo và tìm những người đồng hành.</p></div>
+        <button class="btn" id="discord">VÀO DISCORD ↗</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a class="logo" href="#top"><img src="assets/big-city.png" alt=""><span>BIG CITY<small>VIETNAM ROLEPLAY</small></span></a>
+    <p>BIG CITY Roleplay • GTA V thuộc Rockstar Games.</p>
+    <span class="label">BIG CITY / VN</span>
+  </footer>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="close" aria-label="Đóng">×</button></form>
+    <div class="label">BIG CITY / THÔNG TIN</div>
+    <h2 id="dialog-title"></h2>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "big-city-frontend",
+  "private": true,
+  "scripts": { "build": "tsc && node build.mjs" },
+  "devDependencies": { "typescript": "5.9.3" }
+}
