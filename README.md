@@ -18,6 +18,8 @@ Bản build nằm trong `frontend/dist`. Chạy backend Java từ thư mục d�
 
 ## Sửa giao diện
 
+Chạy `npm run dev` trong thư mục `frontend`, rồi mở `http://127.0.0.1:5173/`. Vite tự cập nhật khi sửa mã nguồn. API được chuyển tiếp đến Java ở `http://127.0.0.1:8080`. Khởi động backend để thử đăng ký, đăng nhập và các nghiệp vụ cư dân. Có thể đặt biến môi trường `BIGCITY_BACKEND_ORIGIN` nếu backend dùng cổng khác.
+
 | Tệp | Nội dung |
 | --- | --- |
 | `src/index.html` | Bố cục trang |
